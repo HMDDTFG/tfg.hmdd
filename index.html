@@ -1,31 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CyberSphere Technologies</title>
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/ce9416b376.js" crossorigin="anonymous"></script>
-    
+    <script src="index.js"></script>
+
 </head>
+
 <body>
     <header class="cabecera">
         <i id="logo_user" class="fa-regular fa-user" style="color: #ffffff;"></i>
         <a id="cab_usuario" href="login.php" style="color: #ffffff;">Anónimo</a>
     </header>
     <header class="subcabecera">
-        <div id="div_menu"><i id="menu" class="fa-solid fa-bars" style="color: #87ceeb;"></i></div>
+        <div id="sidebar" class="sidebar" style="width: 0px;">
+            <a href="#" class="boton-cerrar" onclick="ocultar()">×</a>
+            <ul class="menu">
+                <li><a href="#">Opción 1</a></li>
+                <li><a href="#">Opción 2</a></li>
+                <li><a href="#">Opción 3</a></li>
+                <li><a href="#">Opción 4</a></li>
+                <li><a href="#">Opción 5</a></li>
+            </ul>
+        </div>
+        <div id="contenido" style="margin-left: 0px;">
+            <a id="abrir" class="abrir-cerrar" href="javascript:void(0)" onclick="mostrar()" style="display: inline;">
+                <div id="div_menu"><i id="menu" class="fa-solid fa-bars" style="color: #87ceeb;"></i></div>
+            </a>
+        </div>
+        <a id="cerrar" class="abrir-cerrar" href="#" onclick="ocultar()" style="display: none;">
+        </a>
         <div id="logos"><img id="logo" src="./img/logo.png" alt="Logo empresa">
-        <img id="nombre" src="./img/logo_nombre.png" alt="Nombre empresa"></div>
+            <img id="nombre" src="./img/logo_nombre.png" alt="Nombre empresa">
+        </div>
         <div id="div_cesta"><i id="cesta" class="fa-solid fa-cart-shopping" style="color: #87ceeb;"></i></div>
     </header>
-    
+
     <div id="despegable">
 
     </div>
 
     <div id="fondo_contenido">
-        <div id="contenido">
+        <div id="container">
             <div class="carrusel">
                 <div class="carrusel-slide">
                     <img class="imgcarrusel" src="./img/carrusel-4-removebg-preview.png" alt="Imagen 1">
@@ -35,63 +55,80 @@
             <div class="producto">
                 <div class="rojo">
                     <div class="div_imgproducto"><img class="imgproducto" src="./img/OIP.jfif"></div>
-                <div class="datosproducto">
-                    <h2 class="nombreproducto">NOMBRE</h2>
-                    <p class="descripcion">Descripción del producto: xxxxxxxxxxxxxx</p>
-                    <div class="precio">
-                       <div><h3 class="precioproducto">XX.XX€&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></h3></div> 
-                       
+                    <div class="datosproducto">
+                        <h2 class="nombreproducto">NOMBRE</h2>
+                        <p class="descripcion">Descripción del producto: xxxxxxxxxxxxxx</p>
+                        <div class="precio">
+                            <div>
+                                <h3 class="precioproducto">
+                                    XX.XX€&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i
+                                        class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></h3>
+                            </div>
+
+                        </div>
                     </div>
-                </div>   
-                </div>  
+                </div>
             </div>
             <div class="producto">
                 <div class="rojo">
                     <div class="div_imgproducto"><img class="imgproducto" src="./img/OIP.jfif"></div>
-                <div class="datosproducto">
-                    <h2 class="nombreproducto">NOMBRE</h2>
-                    <p class="descripcion">Descripción del producto: xxxxxxxxxxxxxx</p>
-                    <div class="precio">
-                        <div><h3 class="precioproducto">XX.XX€&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></h3></div> 
-                        
-                     </div>
-                </div>   
-                </div>  
+                    <div class="datosproducto">
+                        <h2 class="nombreproducto">NOMBRE</h2>
+                        <p class="descripcion">Descripción del producto: xxxxxxxxxxxxxx</p>
+                        <div class="precio">
+                            <div>
+                                <h3 class="precioproducto">
+                                    XX.XX€&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i
+                                        class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></h3>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="producto">
                 <div class="rojo">
                     <div class="div_imgproducto"><img class="imgproducto" src="./img/OIP.jfif"></div>
-                <div class="datosproducto">
-                    <h2 class="nombreproducto">NOMBRE</h2>
-                    <p class="descripcion">Descripción del producto: xxxxxxxxxxxxxx</p>
-                    <div class="precio">
-                        <div><h3 class="precioproducto">XX.XX€&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></h3></div> 
-                        
-                     </div>
-                </div>   
-                </div>  
+                    <div class="datosproducto">
+                        <h2 class="nombreproducto">NOMBRE</h2>
+                        <p class="descripcion">Descripción del producto: xxxxxxxxxxxxxx</p>
+                        <div class="precio">
+                            <div>
+                                <h3 class="precioproducto">
+                                    XX.XX€&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i
+                                        class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></h3>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="producto">
                 <div class="rojo">
                     <div class="div_imgproducto"><img class="imgproducto" src="./img/OIP.jfif"></div>
-                <div class="datosproducto">
-                    <h2 class="nombreproducto">NOMBRE</h2>
-                    <p class="descripcion">Descripción del producto: xxxxxxxxxxxxxx</p>
-                    <div class="precio">
-                        <div><h3 class="precioproducto">XX.XX€&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></h3></div> 
-                        
-                     </div>
-                </div>   
-                </div>  
+                    <div class="datosproducto">
+                        <h2 class="nombreproducto">NOMBRE</h2>
+                        <p class="descripcion">Descripción del producto: xxxxxxxxxxxxxx</p>
+                        <div class="precio">
+                            <div>
+                                <h3 class="precioproducto">
+                                    XX.XX€&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i
+                                        class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></h3>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-        
-    
-    <script src="index.js"></script>
-   
+
+
+
+
     <footer>
         <p>&copy; 2024 CyberSphere Technologies. David Díaz y Héctor Marín.</p>
     </footer>
 </body>
+
 </html>
