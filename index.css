@@ -10,7 +10,7 @@ body {
 /* Estilos para el encabezado */
 #cab_usuario{
    font-size: large; 
-   margin-top: 7px;
+   margin-top: 5px;
    margin-left: 4px;
 }
 #logo_user{
@@ -18,7 +18,7 @@ body {
    margin-top: 8px;
 }
 .cabecera{
-    background-color: skyblue;
+    background-color: rgb(5, 47, 64);
     height: 35px;
     display: flex;
     align-content: center;
@@ -34,7 +34,14 @@ body {
     height:70px;
     display: flex;
     margin-top: 35px;
+    position: fixed;
+    width: 100%;
+    transition: 0.3s ease;
 }
+header.CLASE{
+    height:35px;
+}
+
 .subcabecera div{
     width: 35%;
     align-items: flex-start;
@@ -42,11 +49,12 @@ body {
 }
 #menu{
     font-size: 3em;
-    margin-left: 2%;
+    margin-left: 30%;
+    margin-top: -5%;
 }
 #cesta{
     font-size: 3em;
-    margin-left: 75%;
+    margin-left: 65%;
 }
 #div_menu{
     display: flex;
@@ -69,11 +77,12 @@ body {
 
 #fondo_contenido{
     width: 100%;
-    background-color: skyblue;
+    background-color: rgb(5,47,64);
     height: auto;
     align-items: center;
     justify-content: center;
     display: flex;
+    padding-top: 145px;
 }
 #container{
     width: 80%;
@@ -82,6 +91,7 @@ body {
     border-radius: 20px;
     margin-top: 1%;
     margin-bottom: 1%;
+    margin-left: 2%;
 }
 h1{
     margin-left: 5%;
@@ -100,22 +110,19 @@ h1{
 
 .div_imgproducto{
     width: 100%;
-    padding-left: 13%;
+    padding-left: 7%;
     height: 150px;
     padding-top: 8%;
     border-radius: 10px;
 }
 .imgproducto{
-    max-width: 100%;
+    width: 86%;
     height: 150px;
     border-radius: 10px;
 }
 .datosproducto{
-    
-    
     color:#fff;
     margin-left: 10%;
-    
 }
 .nombreproducto{
     font-size: medium;
@@ -172,7 +179,7 @@ h1{
 /* Estilos para el pie de página */
 footer {
     background-color: #ff0000;
-    color: #fff;
+    color: rgb(5,47,64);
     text-align: center;
     padding: 10px;
 }
@@ -189,11 +196,12 @@ footer {
     top: 0;
     left: 0;
     z-index: 1;
-    background-color: #00324b;
+    background-color: rgb(5, 47, 64);
     overflow-x: hidden;
-    transition: 0.4s;
+    transition: 0.3s;
     padding: 1rem 0;
     box-sizing:border-box;
+    border-top: 35px solid red;
 }
 
 .sidebar .boton-cerrar {
@@ -208,7 +216,7 @@ footer {
     height: 32px;
     width: 32px;
     text-align: center;
-    vertical-align: top;
+   
 }
 
 .sidebar ul, .sidebar li{
@@ -227,20 +235,22 @@ footer {
 .sidebar a {
     display: block;
     font-size: 120%;
-    color: #eee;
+    color: #fff;
     text-decoration: none;
     
 }
 
 .sidebar a:hover{
     color:#fff;
-    background-color: #f90;
+    background-color: red;
 
 }
 
 #contenido {
     transition: margin-left .4s;
     padding: 1rem;
+    display: flex;
+    align-items: center;
 }
 
 .abrir-cerrar {
@@ -248,12 +258,38 @@ footer {
     font-size:1rem;   
 }
 
-#abrir {
-    
-}
+
 #cerrar {
     display:none;
 }
 
+/* MENÚ */
 
-
+.titulo{
+    font-size: larger;
+    font-weight: 900;
+    margin-bottom: 6%;
+}
+.separacion{
+    border: 3px solid red;
+    margin-bottom: 6%;
+}
+.opciones{
+    font-weight: 500;
+    margin-bottom: 7%;
+    margin-top:-2%;
+    margin-left: 13%;
+}
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 300px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    z-index: 999; /* Asegúrate de que esté por encima del resto del contenido */
+    display: none; /* Inicialmente oculto */
+}
+#id{
+    font-size: 8em; /* NO FUNCONA REVISAR LUEGO*/
+}
