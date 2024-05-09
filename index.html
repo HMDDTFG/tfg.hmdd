@@ -14,32 +14,29 @@
 <body>
     <div class="cabecera">
         <i id="logo_user" class="fa-regular fa-user" style="color: #ffffff;"></i>
-        <a id="cab_usuario" href="login.php" style="color: #ffffff;">Identifícate</a>
+        <a id="cab_usuario" href="login.html" style="color: #ffffff;">Identifícate</a>
     </div>
     <header class="subcabecera">
         <div id="sidebar" class="sidebar" style="width: 0px;">
-            <a href="#" class="boton-cerrar" onclick="ocultar()">×</a>
+            <a href="#" id="equis" class="boton-cerrar" onclick="ocultar()">×</a>
             <ul class="menu_opciones">
-                <li><a class="titulo" href="#">INICIO</a></li>
-                <li><a class="separacion" href="#"></a></li>
-                <li><a class="titulo" href="#">¿QUIÉNES SOMOS?</a></li>
-                <li><a class="separacion" href="#"></a></li>
-                <li><a class="titulo" href="#">PRODUCTOS</a></li>
-                <li><a class="opciones" href="#">POR MARCAS</a></li>
-                <li><a class="opciones" href="#">MÁS CAROS</a></li>
-                <li><a class="opciones" href="#">MÁS BARATOS</a></li>
-                <li><a class="separacion" href="#"></a></li>
-                <li><a class="titulo" href="#">AYUDA Y AJUSTES</a></li>
-                <li><a class="opciones" href="#">MI CUENTA</a></li>
-                <li><a class="opciones" href="#">ATENCIÓN AL CLIENTE</a></li>
-                <li><a class="opciones" href="#">IDENTIFICARSE</a></li>
-                <li><a class="separacion" href="#"></a></li>
-                <li><a class="titulo" href="#">ENCUENTRANOS AQUÍ</a></li>
-                <li class="rrssli">
-                    <a id="rrss" href="#"></a><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
-                </li>
+                <li><a class="titulo" id="botoninicio" href="index.html">INICIO</a></li>
+                <li><a class="separacion"></a></li>
+                <li><a class="titulo" id="botonquien" href="quiensomos.html">¿QUIÉNES SOMOS?</a></li>
+                <li><a class="separacion"></a></li>
+                <li><a class="titulo">PRODUCTOS</a></li>
+                <li><a class="opciones" href="marcas.html">POR MARCAS</a></li>
+                <li><a class="opciones" href="masprecio.html">MÁS CAROS</a></li>
+                <li><a class="opciones" href="menosprecio.html">MÁS BARATOS</a></li>
+                <li><a class="separacion"></a></li>
+                <li><a class="titulo">AYUDA Y AJUSTES</a></li>
+                <li><a class="opciones" href="micuenta.html">MI CUENTA</a></li>
+                <li><a class="opciones" href="contacto.html">ATENCIÓN AL CLIENTE</a></li>
+                <li><a class="opciones" href="login.html">IDENTIFICARSE</a></li>
+                <li><a class="separacion"></a></li>
+                <li><a class="titulo">ENCUENTRANOS AQUÍ</a></li>
+                <img class="rrss" src="./img/instagram.png"><img id="twitter" class="rrss" src="./img/twitter.png">
             </ul>
-            
         </div>
         <div id="overlay"></div>
         <div id="contenido" style="margin-left: 0px;">
@@ -50,7 +47,7 @@
         <div id="logos"><img id="logo" src="./img/logo.png" alt="Logo empresa">
             <img id="nombre" src="./img/logo_nombre.png" alt="Nombre empresa">
         </div>
-        <div id="div_cesta"><i id="cesta" class="fa-solid fa-cart-shopping" style="color: rgb(5,47,64);"></i></div>
+        <div id="div_cesta"><a href="cesta.html"><i id="cesta" class="fa-solid fa-cart-shopping" style="color: rgb(5,47,64);"></i></a></div>
     </header>
 
     <div id="despegable">
