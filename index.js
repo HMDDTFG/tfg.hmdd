@@ -21,4 +21,4 @@ function FUNCION(){
 	header.classList.toggle("CLASE", window.scrollY > 5);
 }
 
-window.addEventListener('scroll',FUNCION);
+// window.addEventListener('scroll',FUNCION);

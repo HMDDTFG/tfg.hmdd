@@ -1,101 +1,111 @@
 /* Estilos generales */
- :root{
-    --cabeceraBody: #14213D; 
-    --productos:#d5bdaf;
-    --container:#E5E5E5;
-    
- }
-*{
+:root {
+    --cabeceraBody: #14213D;
+    --productos: #d5bdaf;
+    --container: #E5E5E5;
+    --red_dark: #780000;
+    --magician_red:#c1121f;
+    --cake_blue:#669bbc;
+}
+
+* {
     text-decoration: none;
-   
+
 
 }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: var(--cabeceraBody);
 }
+
 /* Estilos para el encabezado */
-#cab_usuario{
-   font-size: large; 
-   margin-top: 5px;
-   margin-left: 4px;
-}
-#logo_user{
-    margin-left: 90%;
-   margin-top: 8px;
-}
-.cabecera{
+.cabecera {
     height: 35px;
     display: flex;
-    align-content: center;
-    justify-content: center;
     position: fixed;
+    justify-content: flex-end;
+    align-items: center;
     width: 100%;
-    top:0;
+    background-color: var(--cabeceraBody);
+    z-index: 10;
 }
+
+#cab_usuario {
+    padding-right: 8px;
+}
+
 .subcabecera {
     background-color: var(--productos);
     color: #fff;
     padding: 10px;
-    height:100px;
+    z-index: 10;
+    height: 100px;
     display: flex;
     margin-top: 35px;
     position: fixed;
     width: 100%;
     transition: 0.3s ease;
 }
-header.CLASE{
-    height:35px;
+
+header.CLASE {
+    height: 35px;
 }
 
-.subcabecera div{
+.subcabecera div {
     width: 40%;
     align-items: flex-start;
 
 }
-#menu{
+
+#menu {
     font-size: 3em;
     margin-left: 30%;
     margin-top: -5%;
 }
-#cesta{
+
+#cesta {
     font-size: 3em;
-    margin-left: 500%;
 }
-#div_menu{
+
+#div_menu {
     display: flex;
     align-items: center;
 }
-#logos{
+
+#logos {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#div_cesta{
+
+#div_cesta {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    margin-right: 40px
 }
-#logo{
+
+#logo {
     height: 80px;
     margin-left: -14%;
 }
+
 /* Estilos para el contenido */
 
-#fondo_contenido{
-    width: 100%;
-    background-color:var(--cabeceraBody);
-    height: auto;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+#fondo_contenido {
+    background-color: var(--cabeceraBody);
     padding-top: 145px;
 }
-.container{
+
+.container {
     background-color: var(--container);
     border-radius: 1%;
 }
-#container{
+
+#container {
     background-color: var(--container);
     width: 80%;
     height: auto;
@@ -104,96 +114,108 @@ header.CLASE{
     margin-bottom: 1%;
     margin-left: 2%;
 }
-h1{
+
+h1 {
     margin-left: 5%;
     margin-top: 4%;
 }
-.producto{
+
+.producto {
     background-color: var(--productos);
     border-radius: 4px;
 }
 
-.div_imgproducto{
+.div_imgproducto {
     width: 100%;
     padding-left: 7%;
     height: 150px;
     padding-top: 8%;
     border-radius: 10px;
 }
-.imgproducto{
+
+.imgproducto {
     width: 86%;
     height: 150px;
     border-radius: 10px;
     align-items: center;
 }
-.datosproducto{
-    color:#fff;
+
+.datosproducto {
+    color: #fff;
     margin-left: 10%;
 }
-.nombreproducto{
+
+.nombreproducto {
     font-size: medium;
 }
-.descripcion{
+
+.descripcion {
     font-size: small;
 }
-.precioproducto{
+
+.precioproducto {
     font-size: medium;
 }
-.cestaplus{
+
+.cestaplus {
     font-style: 1em;
 }
-.rojo{ 
+
+.rojo {
     display: flex;
     flex-direction: column;
 }
-.precio{
+
+.precio {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: -5%;
-    margin-right: 10%;
+    width: 100%;
 }
 
 /* Carrusel de la página index */
-
-.carrusel{
+.carrusel {
     width: 75%;
     margin-top: 30px;
     margin-left: 12.5%;
     height: 240px;
-    background-color: red;
     border-radius: 20px;
     align-items: center;
     justify-content: center;
     display: flex;
 
 }
-.carrusel-slide{
+
+.carrusel-slide {
     width: 97%;
     height: 220px;
-    background-color: red;
+    background-color: var(--magician_red);
     align-items: center;
     justify-content: center;
+    border-radius: 2%;
     display: flex;
 
-}  
-.imgcarrusel{
+}
+
+.imgcarrusel {
     width: 100%;
     height: 220px;
-    border-radius: 15px;
+    border-radius: 2%;
 }
+
 /* Estilos para el pie de página */
 footer {
     background-color: var(--productos);
-    color: rgb(5,47,64);
+    color: rgb(5, 47, 64);
     text-align: center;
     align-items: center;
     padding: 10px;
 }
+
 /* A partir de aquí es el desplegable ya montado. */
- body {
+body {
     font-family: "Segoe UI", sans-serif;
-    font-size:100%;
+    font-size: 100%;
 }
 
 .sidebar {
@@ -207,7 +229,7 @@ footer {
     overflow-x: hidden;
     transition: 0.3s;
     padding: 1rem 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
     border-top: 35px solid var(--productos);
 }
 
@@ -223,20 +245,21 @@ footer {
     height: 32px;
     width: 32px;
     text-align: center;
-   
+
 }
 
-.sidebar ul, .sidebar li{
-    margin:0;
-    padding:0;
-    list-style:none inside;
+.sidebar ul,
+.sidebar li {
+    margin: 0;
+    padding: 0;
+    list-style: none inside;
 }
 
 .sidebar ul {
     margin: 4rem auto;
     display: block;
     width: 80%;
-    min-width:200px;
+    min-width: 200px;
 }
 
 .sidebar a {
@@ -246,24 +269,28 @@ footer {
     text-decoration: none;
 }
 
-.opciones:hover{
-    color:#fff;
+.opciones:hover {
+    color: #fff;
     background-color: var(--container);
 
 }
-#botoninicio:hover{
-    color:#fff;
+
+#botoninicio:hover {
+    color: #fff;
     background-color: var(--container);
 
 }
-#botonquien:hover{
-    color:#fff;
+
+#botonquien:hover {
+    color: #fff;
     background-color: var(--container);
 }
-#equis:hover{
-    color:#fff;
+
+#equis:hover {
+    color: #fff;
     background-color: var(--container);
 }
+
 #contenido {
     transition: margin-left .4s;
     padding: 1rem;
@@ -273,62 +300,73 @@ footer {
 
 .abrir-cerrar {
     color: #2E88C7;
-    font-size:1rem;   
+    font-size: 1rem;
 }
 
 
 #cerrar {
-    display:none;
+    display: none;
 }
 
 /* MENÚ */
 
-.titulo{
+.titulo {
     font-size: larger;
     font-weight: 900;
     margin-bottom: 6%;
 }
-.separacion{
+
+.separacion {
     border: 3px solid var(--productos);
     margin-bottom: 6%;
 }
-.opciones{
+
+.opciones {
     font-weight: 500;
     margin-bottom: 7%;
-    margin-top:-2%;
+    margin-top: -2%;
     margin-left: 13%;
 }
+
 #overlay {
     position: fixed;
     top: 0;
     left: 300px;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
-    z-index: 999; /* Asegúrate de que esté por encima del resto del contenido */
-    display: none; /* Inicialmente oculto */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo oscuro semitransparente */
+    z-index: 999;
+    /* Asegúrate de que esté por encima del resto del contenido */
+    display: none;
+    /* Inicialmente oculto */
 }
-#id{
-    font-size: 8em; /* NO FUNCONA REVISAR LUEGO*/
+
+#id {
+    font-size: 8em;
+    /* NO FUNCONA REVISAR LUEGO*/
 }
-.rrss{
+
+.rrss {
     width: 18%;
     height: 30px;
     margin-left: 20%;
 }
 
 /*PAGINA QUIENES SOMOS*/
-.parr_quien{
+.parr_quien {
     margin-left: 10%;
     margin-right: 10%;
-    font-weight: 500; 
+    font-weight: 500;
 }
-#ultparr{
+
+#ultparr {
     margin-bottom: 40px;
     height: 130px;
 }
-.imagenquien{
-    width:20%;
+
+.imagenquien {
+    width: 20%;
     height: 120px;
     margin-left: 40%;
     margin-right: 40%;
@@ -336,24 +374,28 @@ footer {
 }
 
 /*PAGINA CONTACTO*/
-#telefono{
+#telefono {
     margin-left: 43%;
 }
-#text_form{
+
+#text_form {
     margin-top: 40px;
 }
-.text_formulario{
-    font-weight: 700; 
+
+.text_formulario {
+    font-weight: 700;
     margin-left: 5%;
     display: inline-block;
     align-items: center;
     justify-content: center;
 }
-#primer_item{
+
+#primer_item {
     margin-top: 10px;
 }
-.contactoform{
-    border: 5px solid rgb(5,47,64);
+
+.contactoform {
+    border: 5px solid rgb(5, 47, 64);
     border-radius: 5px;
     width: 40%;
     margin-left: 30%;
@@ -362,14 +404,25 @@ footer {
     margin-bottom: 20px;
     margin-top: 30px;
 }
-#enviar_form{
+
+#enviar_form {
     margin-left: 43%;
     margin-bottom: 20px;
-    background-color: rgb(5,47,64);
-    color:#fff;
+    background-color: rgb(5, 47, 64);
+    color: #fff;
 }
-#no{
-margin: 0;
-padding: 0;
-margin-top: 5px;
+
+#no {
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+}
+.nombre {
+    align-self: flex-start;
+}
+
+
+.carro {
+    width: 26px;
+    height: 26px;
 }
